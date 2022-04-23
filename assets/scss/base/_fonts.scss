@@ -1,7 +1,50 @@
-*{
-    font-family: gesta, sans-serif;
+* {
+  font-family: gesta, sans-serif;
 }
 
-html{
+html {
+  font-size: unquote("min(max(1rem, 4vw), 36px)");
+}
+h1 {
+//   font-family: Snippet;
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+h3 {
+//   font-family: Snippet;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+p {
+//   font-family: Snippet;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+blockquote {
+//   font-family: Snippet;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+pre {
+//   font-family: Snippet;
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+a   {
     font-size: unquote("min(max(1rem, 4vw), 36px)");
-  }
+}

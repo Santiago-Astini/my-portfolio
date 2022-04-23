@@ -51,26 +51,106 @@ html:focus-within {
 html {
   font-size: min(max(1rem, 4vw), 36px); }
 
+h1 {
+  font-size: 23px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px; }
+
+h3 {
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 23px; }
+
+p {
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px; }
+
+blockquote {
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px; }
+
+pre {
+  font-size: 11px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px; }
+
+a {
+  font-size: min(max(1rem, 4vw), 36px); }
+
 :root {
-  --shadow-color: 0deg 0% 59%;
-  --shadow-elevation-low:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-      0.6px 0.8px 1.1px -1.2px hsl(var(--shadow-color) / 0.34),
-      1.4px 2px 2.7px -2.5px hsl(var(--shadow-color) / 0.34);
-  --shadow-elevation-medium:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-      1.1px 1.6px 2.2px -0.8px hsl(var(--shadow-color) / 0.36),
-      2.8px 4.1px 5.6px -1.7px hsl(var(--shadow-color) / 0.36),
-      6.8px 9.9px 13.5px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-color-w: 0deg 0% 59%;
+  --shadow-elevation-low-w:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color-w) / 0.34),
+      0.6px 0.8px 1.1px -1.2px hsl(var(--shadow-color-w) / 0.34),
+      1.4px 2px 2.7px -2.5px hsl(var(--shadow-color-w) / 0.34);
+  --shadow-elevation-mid-w:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color-w) / 0.36),
+      1.1px 1.6px 2.2px -0.8px hsl(var(--shadow-color-w) / 0.36),
+      2.8px 4.1px 5.6px -1.7px hsl(var(--shadow-color-w) / 0.36),
+      6.8px 9.9px 13.5px -2.5px hsl(var(--shadow-color-w) / 0.36);
+  --shadow-elevation-hi-w:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color-w) / 0.34),
+      2px 2.9px 4px -0.4px hsl(var(--shadow-color-w) / 0.34),
+      3.7px 5.4px 7.4px -0.7px hsl(var(--shadow-color-w) / 0.34),
+      6.1px 8.9px 12.1px -1.1px hsl(var(--shadow-color-w) / 0.34),
+      9.7px 14.2px 19.3px -1.4px hsl(var(--shadow-color-w) / 0.34),
+      15.1px 22.1px 30.1px -1.8px hsl(var(--shadow-color-w) / 0.34),
+      23px 33.6px 45.8px -2.1px hsl(var(--shadow-color-w) / 0.34),
+      33.9px 49.5px 67.5px -2.5px hsl(var(--shadow-color-w) / 0.34); }
+
+:root {
+  --shadow-color-b: 229deg 100% 22%;
+  --shadow-elevation-low-b:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color-b) / 0.34),
+      0.5px 0.8px 1.1px -1.2px hsl(var(--shadow-color-b) / 0.34),
+      1.3px 2px 2.7px -2.5px hsl(var(--shadow-color-b) / 0.34);
+  --shadow-elevation-mid-b:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color-b) / 0.36),
+      1.1px 1.7px 2.3px -0.8px hsl(var(--shadow-color-b) / 0.36),
+      2.6px 4.2px 5.6px -1.7px hsl(var(--shadow-color-b) / 0.36),
+      6.4px 10.1px 13.5px -2.5px hsl(var(--shadow-color-b) / 0.36);
+  --shadow-elevation-hi-b:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color-b) / 0.34),
+      1.9px 3px 4px -0.4px hsl(var(--shadow-color-b) / 0.34),
+      3.5px 5.5px 7.3px -0.7px hsl(var(--shadow-color-b) / 0.34),
+      5.7px 9.1px 12.1px -1.1px hsl(var(--shadow-color-b) / 0.34),
+      9.1px 14.5px 19.3px -1.4px hsl(var(--shadow-color-b) / 0.34),
+      14.3px 22.6px 30.1px -1.8px hsl(var(--shadow-color-b) / 0.34),
+      21.7px 34.4px 45.8px -2.1px hsl(var(--shadow-color-b) / 0.34),
+      32px 50.7px 67.4px -2.5px hsl(var(--shadow-color-b) / 0.34); }
+
+:root {
+  --shadow-color-g: 240deg 4% 44%;
+  --shadow-elevation-low-g:
+      0.3px 0.5px 0.7px hsl(var($color-gray) / 0.34),
+      0.5px 0.8px 1.1px -1.2px hsl(var($color-gray) / 0.34),
+      1.3px 2px 2.7px -2.5px hsl(var($color-gray) / 0.34);
+  --shadow-elevation-mid-g:
+      0.3px 0.5px 0.7px hsl(var(--shadow-color-g) / 0.36),
+      1.1px 1.7px 2.3px -0.8px hsl(var(--shadow-color-g) / 0.36),
+      2.6px 4.2px 5.6px -1.7px hsl(var(--shadow-color-g) / 0.36),
+      6.4px 10.1px 13.5px -2.5px hsl(var(--shadow-color-g) / 0.36);
   --shadow-elevation-high:
       0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-      2px 2.9px 4px -0.4px hsl(var(--shadow-color) / 0.34),
-      3.7px 5.4px 7.4px -0.7px hsl(var(--shadow-color) / 0.34),
-      6.1px 8.9px 12.1px -1.1px hsl(var(--shadow-color) / 0.34),
-      9.7px 14.2px 19.3px -1.4px hsl(var(--shadow-color) / 0.34),
-      15.1px 22.1px 30.1px -1.8px hsl(var(--shadow-color) / 0.34),
-      23px 33.6px 45.8px -2.1px hsl(var(--shadow-color) / 0.34),
-      33.9px 49.5px 67.5px -2.5px hsl(var(--shadow-color) / 0.34); }
+      1.9px 3px 4px -0.4px hsl(var(--shadow-color) / 0.34),
+      3.5px 5.5px 7.3px -0.7px hsl(var(--shadow-color) / 0.34),
+      5.7px 9.1px 12.1px -1.1px hsl(var(--shadow-color) / 0.34),
+      9.1px 14.5px 19.3px -1.4px hsl(var(--shadow-color) / 0.34),
+      14.3px 22.6px 30.1px -1.8px hsl(var(--shadow-color) / 0.34),
+      21.7px 34.4px 45.8px -2.1px hsl(var(--shadow-color) / 0.34),
+      32px 50.7px 67.4px -2.5px hsl(var(--shadow-color) / 0.34); }
 
 /* -------------------------------------
 HEADER dsktop
@@ -176,54 +256,46 @@ HEADER dsktop
 .home {
   width: 100%;
   min-height: 100%;
-  background-color: #f0f0f0;
-  padding: 2%; }
+  background-color: #f0f0f0; }
+
+.show {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .show-prj {
-  max-height: 100vh;
-  display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr; }
+  width: 80%;
+  height: 80vh;
+  background-color: #B5B5BD;
+  background-image: linear-gradient(335deg, #b6b6be 0%, #bbbbc3 22%, #c4c4ca 33%, #ccccd1 42%, #d1d1d6 50%, #dadadd 58%, #e2e2e4 67%, #e8e8e9 78%, #f0f0f0 100%);
+  margin-top: 10vh;
+  padding: 2%;
+  border-radius: min(max(0.5rem,4vw), 12px);
+  box-shadow: var(--shadow-elevation-hi-w);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly; }
   .show-prj__fr {
-    grid-row: 1 / 6;
-    grid-column: 3 / 4;
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
-    width: 100%; }
-    .show-prj__fr__title {
-      grid-row: 2 / 3;
-      grid-column: 1 / 3;
-      display: flex;
-      justify-content: flex-end;
-      font-size: min(max(1.5rem, 4vw), 42px); }
-    .show-prj__fr__tags {
-      grid-row: 4 / 5;
-      grid-column: 1 / 3;
-      display: flex;
-      justify-content: flex-end; }
-    .show-prj__fr__but {
-      grid-row: 3 / 4;
-      grid-column: 1 / 3;
-      display: flex;
-      justify-content: flex-end; }
-    .show-prj__fr__nav {
-      grid-row: 5 / 6;
-      grid-column: 1 / 3;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center; }
-  .show-prj__bk {
-    grid-row: 1 / 6;
-    grid-column: 1 / 3;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; }
+    flex-direction: column;
+    justify-content: flex-end; }
+    .show-prj__fr__title {
+      color: #0026c9; }
+    .show-prj__fr__nav__page__next {
+      width: min(max(1rem, 4vw), 36px); }
+      .show-prj__fr__nav__page__next__sl {
+        width: min(max(1rem, 4vw), 36px); }
+        .show-prj__fr__nav__page__next__sl__arrow {
+          width: "min(max(1rem, 4vw), 36px)"; }
+  .show-prj__bk {
+    box-shadow: var(--shadow-elevation-mid-g);
+    border-radius: 1vw;
+    overflow: hidden;
+    max-width: 60%; }
     .show-prj__bk__img {
-      max-height: 80%;
-      max-width: 100%;
-      box-shadow: var(--shadow-elevation-low);
-      border-radius: 1vw; }
+      max-width: 100%; }
 
 .footer-home {
   width: 100%;
