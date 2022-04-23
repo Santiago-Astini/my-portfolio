@@ -32,13 +32,16 @@ HEADER dsktop
             display: block;
             position: relative;
             padding: 0.2em 0;
-            width: unquote("min(max(2rem, 8vw), 144px)");
+            width: unquote("min(max(2rem, 8vw), 72px)");
+            filter: $filer-color-blue;
+
             
 
         }
 
     }
 }
+
 
 
 
@@ -51,7 +54,7 @@ HEADER dsktop
     z-index: 101; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #0026c9; /* Black*/
+    background-color: $color-blue;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -72,10 +75,11 @@ HEADER dsktop
     padding: 0.5vh 2vw;
     text-decoration: none;
     // font-size: 25px;
-    color: #f0f0f0;
+    color: $color-white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    white-space: nowrap;
     // justify-content: space-between;
     // transition: 0.3s;
     // overflow: hidden;
@@ -83,7 +87,7 @@ HEADER dsktop
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: $color-white;
   }
   
   /* Position and style the close button (top right corner) */
@@ -95,7 +99,7 @@ HEADER dsktop
 
             // position: relative;
     padding: 0.2em 0;
-    width:  unquote("min(max(2rem, 8vw), 144px)");
+    width:  unquote("min(max(2rem, 8vw), 72px)");
     
     // transition: 0.5s;
   }
