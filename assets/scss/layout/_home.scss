@@ -74,20 +74,19 @@
                     justify-content: flex-end;
                     align-items: center;
                     &__page{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: flex-end;
-                        justify-content: center;
-                        width: fit-content;
-                        height: fit-content;
-                        &__txt{
-
-                        }
-                        &__arrow{
-                            margin-left: 1%;
-                            // max-width: fit-content;
-                            // max-width: fit-content;
-                        }
+                        // display: flex;
+                        // flex-direction: row;
+                        // align-items: flex-end;
+                        // justify-content: center;
+                        // width: fit-content;
+                        // height: fit-content;
+                        // &__txt{
+                        // }
+                        // &__arrow{
+                        //     margin-left: 1%;
+                        //     // max-width: fit-content;
+                        //     // max-width: fit-content;
+                        // }
                     }
                     
                 }     
@@ -118,7 +117,8 @@
                 &__img{
                     max-height: 80%;
                     max-width: 100%;
-                    box-shadow: var(--shadow-elevation-medium);
+                    box-shadow: var(--shadow-elevation-low);
+                    border-radius: 1vw;
 
                 }
             }
