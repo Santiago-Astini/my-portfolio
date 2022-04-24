@@ -75,11 +75,10 @@ p {
   font-size: min(max(1rem, 4vw), 36px);
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4; }
 
 blockquote {
-  font-size: 17px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -96,7 +95,7 @@ a {
   font-size: min(max(1rem, 4vw), 36px);
   font-style: normal;
   font-variant: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4; }
 
 :root {
@@ -350,7 +349,10 @@ HEADER dsktop
     .footer-h__cont__cta {
       grid-row: 2 / 3;
       grid-column: 1 / 4;
-      display: flex; }
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-size: 3.5vmax; }
       .footer-h__cont__cta__top {
         color: #f0f0f0; }
       .footer-h__cont__cta__mid {
@@ -358,11 +360,13 @@ HEADER dsktop
       .footer-h__cont__cta__bot {
         color: #f0f0f0; }
         .footer-h__cont__cta__bot a {
-          color: #f0f0f0; }
+          color: #f0f0f0;
+          font-size: 3.5vmax; }
     .footer-h__cont__txt {
       grid-row: 3 / 4;
       grid-column: 1 / 4;
-      display: flex; }
+      display: flex;
+      align-items: flex-end; }
       .footer-h__cont__txt p {
         color: #f0f0f0; }
     .footer-h__cont__mail {
@@ -372,7 +376,14 @@ HEADER dsktop
       flex-direction: column;
       justify-content: flex-end; }
       .footer-h__cont__mail__a__top {
-        color: #f0f0f0; }
+        color: #f0f0f0;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .footer-h__cont__mail__a__top__arrow {
+          width: min(max(1rem, 4vw), 36px);
+          margin-left: 2vw;
+          filter: invert(100%) sepia(26%) saturate(89%) hue-rotate(231deg) brightness(110%) contrast(88%); }
       .footer-h__cont__mail__a__bot {
         color: #f0f0f0; }
     .footer-h__cont__social {

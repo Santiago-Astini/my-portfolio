@@ -16,7 +16,13 @@
             grid-row: 2 / 3;
             grid-column: 1 / 4;
 
-            display: flex;
+            // display: flex;
+        
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                font-size: 3.5vmax;
 
             &__top{
                 color: $color-white;
@@ -28,6 +34,7 @@
                 color: $color-white;
                 & a{
                     color: $color-white;
+                    font-size: 3.5vmax;
                 }
             }
         }
@@ -36,6 +43,8 @@
             grid-column: 1 / 4;
 
             display: flex;
+
+            align-items: flex-end;
 
             & p{
                 color: $color-white;
@@ -49,10 +58,21 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            
 
             &__a{
                 &__top{
                     color: $color-white;
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    &__arrow{
+                        width:  unquote("min(max(1rem, 4vw), 36px)");
+                        margin-left: 2vw;
+                        filter: $filter-color-white;
+                    }
                 }
                 &__bot{
                     color: $color-white;
