@@ -1,0 +1,161 @@
+ //ZOOOM IN ANIMATION
+ 
+ .img-hover-zi{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+ }
+ .img-hover-zi:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+ }
+
+//UNDERLINE ANIMATION
+
+ .u-ani-b {
+    display: inline-block;
+    position: relative;
+    color: $color-blue;
+    
+  }
+  
+  .u-ani-b:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $color-blue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .u-ani-b:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+// HOVER ELEMENT
+
+//   .u-ani-b {
+//     display: inline-block;
+//     position: relative;
+//     color: $color-blue;
+    
+//   }
+  
+//   .u-ani-b:after {
+//     content: '';
+//     position: absolute;
+//     width: 100%;
+//     transform: scaleX(0);
+//     height: 4px;
+//     bottom: 0;
+//     left: 0;
+//     background-color: $color-blue;
+//     transform-origin: bottom right;
+//     transition: transform 0.25s ease-out;
+//   }
+  
+//   .u-ani-b:hover:after {
+//     transform: scaleX(1);
+//     transform-origin: bottom left;
+//   }
+
+
+// WHITE
+
+  .u-ani-w {
+    display: inline-block;
+    position: relative;
+    color: $color-white;
+  }
+  
+  .u-ani-w:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $color-white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .u-ani-w:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+  }
+
+//     //   HOVER ELEMNT
+
+//     .h-target {
+
+//         display: inline-block;
+//         position: relative;
+//         color: $color-white;
+//     }
+    
+//     .u-ani-w-t:after  .h-target {
+//         // content: '';
+//         position: absolute;
+//         width: 100%;
+//         transform: scaleX(0);
+//         height: 4px;
+//         bottom: 0;
+//         left: 0;
+//         background-color: $color-white;
+//         transform-origin: bottom right;
+//         transition: transform 0.25s ease-out;
+//     }
+    
+//     .u-ani-w-t:hover:after  .h-target{
+//         transform: scaleX(1);
+//         transform-origin: bottom left;
+
+//   }
+
+
+// HOVER SCALE
+
+    .h-s-r{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        transform-origin: top right;
+    }
+    // .h-s:after {
+    //     -webkit-transform: scale(1);
+    //     transform: scale(1);
+    //     -webkit-transition: 5s ease-in-out;
+    //     transition: 10s ease-in-out;
+    //  }
+     .h-s-r:hover{
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+     }
+
+     .h-s-l{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        transform-origin: top left;
+    }
+    // .h-s:after {
+    //     -webkit-transform: scale(1);
+    //     transform: scale(1);
+    //     -webkit-transition: 5s ease-in-out;
+    //     transition: 10s ease-in-out;
+    //  }
+     .h-s-l:hover{
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+     }

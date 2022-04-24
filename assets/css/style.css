@@ -1,3 +1,77 @@
+.img-hover-zi {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out; }
+
+.img-hover-zi:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); }
+
+.u-ani-b {
+  display: inline-block;
+  position: relative;
+  color: #0026c9; }
+
+.u-ani-b:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #0026c9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.u-ani-b:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+.u-ani-w {
+  display: inline-block;
+  position: relative;
+  color: #f0f0f0; }
+
+.u-ani-w:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.u-ani-w:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+.h-s-r {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  transform-origin: top right; }
+
+.h-s-r:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); }
+
+.h-s-l {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  transform-origin: top left; }
+
+.h-s-l:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); }
+
 *, *::before, *::after {
   box-sizing: border-box; }
 
@@ -50,53 +124,6 @@ html:focus-within {
 
 html {
   font-size: min(max(1rem, 4vw), 36px); }
-
-h1 {
-  font-size: min(max(1rem, 4vw), 150px);
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 1.2; }
-
-h2 {
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 1.2; }
-
-h3 {
-  font-size: 17px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 1.3; }
-
-p {
-  font-size: min(max(1rem, 4vw), 36px);
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 1.4; }
-
-blockquote {
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 23px; }
-
-pre {
-  font-size: 11px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 23px; }
-
-a {
-  font-size: min(max(1rem, 4vw), 36px);
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 1.4; }
 
 :root {
   --shadow-color-w: 0deg 0% 59%;
@@ -270,6 +297,7 @@ HEADER dsktop
 .show {
   width: 100%;
   min-height: 100%;
+  padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -397,3 +425,43 @@ HEADER dsktop
       .footer-h__cont__social a {
         color: #f0f0f0;
         margin-left: 3%; }
+
+.about {
+  width: 100%;
+  min-height: 100%;
+  background-color: #f0f0f0;
+  width: 100%;
+  min-height: 100%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about__tilte {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw; }
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about__content__profile {
+      width: 100%;
+      background-color: #B5B5BD;
+      background-image: linear-gradient(335deg, #b6b6be 0%, #bbbbc3 22%, #c4c4ca 33%, #ccccd1 42%, #d1d1d6 50%, #dadadd 58%, #e2e2e4 67%, #e8e8e9 78%, #f0f0f0 100%);
+      border-radius: min(max(0.5rem,4vw), 12px);
+      box-shadow: var(--shadow-elevation-hi-w);
+      overflow: hidden; }
+      .about__content__profile__pic {
+        max-width: 100%; }
+    .about__content__bio {
+      width: 100%;
+      padding: 2% 4%;
+      margin-top: 5%;
+      background-color: #B5B5BD;
+      background-image: linear-gradient(335deg, #b6b6be 0%, #bbbbc3 22%, #c4c4ca 33%, #ccccd1 42%, #d1d1d6 50%, #dadadd 58%, #e2e2e4 67%, #e8e8e9 78%, #f0f0f0 100%);
+      border-radius: min(max(0.5rem,4vw), 12px);
+      box-shadow: var(--shadow-elevation-hi-w); }

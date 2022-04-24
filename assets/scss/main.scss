@@ -1,14 +1,14 @@
 @import 'utilities/variabls';
-// @import 'utilities/functions';
+@import 'utilities/functions';
 // @import 'utilities/mixins';
-
+// 
 // @import 'utilities/bootstrap';
 // @import 'vendors/jquery-ui';
-
+// 
 @import 'base/reset';
 @import 'base/fonts';
 @import 'base/shadows';
-
+// 
 @import 'layout/nav';
 @import 'layout/home';
 @import 'layout/footer-home';
@@ -18,12 +18,12 @@
 @import 'layout/contact';
 // @import 'layout/footer';
 // @import 'layout/forms';
-
+// 
 // @import 'components/buttons';
 // @import 'components/jumbo';
-
+// 
 // @import 'pages/home';
 // @import 'pages/contact';
-
+// 
 // @import 'themes/theme';
 // @import 'themes/admin';

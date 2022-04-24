@@ -11,6 +11,9 @@
     .show{
         width: 100%;
         min-height: 100%;
+
+        // padding-top: 10vh;
+        padding-bottom: 10vh;
         
 
         display: flex;
@@ -18,8 +21,7 @@
         align-items: center;
         
     }
-               
-
+    
         .show-prj{
                 width: 80%;
                 height: 80vh;     
