@@ -67,7 +67,9 @@ HEADER dsktop
     
   }
 
-  
+  // .menu-section{
+  //   // width: 100vw;
+  // }
   
   /* The navigation menu links */
   .sidenav a {
@@ -78,8 +80,11 @@ HEADER dsktop
     color: $color-white;
     display: flex;
     flex-direction: row;
+    // justify-content: space-between;
     flex-wrap: nowrap;
     white-space: nowrap;
+
+    width: 100vw;
     // justify-content: space-between;
     // transition: 0.3s;
     // overflow: hidden;

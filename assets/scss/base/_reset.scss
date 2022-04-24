@@ -3,6 +3,7 @@
 // -----------------------------------------------------------*/
 *, *::before, *::after {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 //   /*-----------------------------------------------------------
 //     2. remueve el margen por defoult
