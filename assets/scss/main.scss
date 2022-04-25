@@ -1,6 +1,10 @@
 @import 'utilities/variabls';
-@import 'utilities/functions';
+
+// @import 'utilities/functions';
 // @import 'utilities/mixins';
+@import 'utilities/media';
+@import 'utilities/mediatest';
+
 // 
 // @import 'utilities/bootstrap';
 // @import 'vendors/jquery-ui';
@@ -21,6 +25,8 @@
 // 
 // @import 'components/buttons';
 // @import 'components/jumbo';
+@import 'components/ani';
+
 // 
 // @import 'pages/home';
 // @import 'pages/contact';
