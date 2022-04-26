@@ -1,7 +1,13 @@
 // variables de Brakepoints
-$br-mob:420px;
+$br-mob: 420px;
 $br-tab: 720px;
-$br-dsk: 102px;
+$br-dsk: 1024px;
+
+
+
+// (min-width: $br-mob)
+// (min-width: $br-tab)
+// (min-width: $br-dsk)
 
 
 $color-white: #f0f0f0;
@@ -24,3 +30,4 @@ $gradient-gray: linear-gradient(
   hsl(241deg, 2%, 91%) 78%,
   hsl(0deg, 0%, 94%) 100%
   );
+
